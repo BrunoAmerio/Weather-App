@@ -1,0 +1,17 @@
+@font-face {
+      font-family: 'ms-pgothic';
+      src: url('../fonts/ms-pgothic.ttf');
+      font-weight: normal;
+}
+body::-webkit-scrollbar {
+      width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+      background-color: rgb(95, 95, 95);
+      border-radius: 20px;
+}
+body{
+      background-color: #8FC5FE ;
+};
+
+

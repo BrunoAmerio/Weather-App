@@ -1,0 +1,25 @@
+.container{
+     display: flex;
+     gap: 30px;
+     padding: 10px;
+     width: 100%;
+     height: 300px;
+     margin-top: 150px;
+     align-items: center;
+     flex-wrap: nowrap;
+     overflow: auto;
+     color: white;
+     background-color: #1360b8;
+}
+
+.container p{
+     font-size: 13px;
+     margin: 6px;
+}
+.hourContainer{
+     width: 100px;
+}
+
+.img{
+     width: 80px;
+}

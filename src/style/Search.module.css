@@ -1,0 +1,38 @@
+.input{
+     position: absolute;
+     right: 0;
+     padding: 0px 15px;
+     margin-right: 10px;
+     height: 33px;
+     width: 100%;
+     border: none;
+     border-radius: 200px;
+     background-color: #FA6155;
+     color: white;
+}
+.input:focus{
+     outline: none;
+     background-color: #FA6155;
+
+}
+
+.searchButton{
+     position: absolute;
+     padding: 1px;
+     right: 0;
+     width: 35px;
+     height: 33px;
+     margin-left: 6px;
+     border: none;
+     border-radius: 12px;
+     background-color: #FA6155;
+     z-index: 99;
+}
+.searchButton:hover .input{
+     width: 100%;
+}
+
+@media (max-width: 470px){
+     
+
+}

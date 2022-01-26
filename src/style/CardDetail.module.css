@@ -1,0 +1,86 @@
+.currentContainer{
+     display: flex;
+     position: relative;
+     width: 95%;
+     gap: 100px;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     padding: 50px;
+     margin-top: 30px;
+     border-radius: 10px;
+     color: white;
+     background-color: #1360b8;
+}
+.imgContainer{
+     display: flex;
+     bottom: 0;
+     gap: 10px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.imgContainer h5{
+     margin: 0;
+}
+
+.imgContainer img{
+     width: 130px;
+     height: 130px;
+}
+.tempData{
+     text-align: center;
+     background-color: #74B5FA;
+     padding: 15px;
+     border-radius: 10px;
+     box-shadow: 12px 12px 15px rgb(46, 50, 71);
+     cursor: default;
+     transition: .1s;
+}
+.tempData:hover{
+     transform: translateY(-2px);
+     box-shadow: 20px 20px 15px rgb(46, 50, 71);
+     transition: .1s;
+}
+
+
+
+
+
+.tempData p{
+     margin: 0;
+}
+.gralData p{
+     margin: 0;
+}
+
+.forecastContainer{
+     margin-top: 50px;
+     display: flex;
+     justify-content: space-evenly;
+}
+.forecastCard{
+     text-align: center;
+     width: 20%;
+     padding: 0px 30px 0px 30px;
+     margin-bottom: 40px;
+     background-color: #1360b8;
+     color: white;
+     border-radius: 10px;
+}
+.forecastCard h1{
+     font-size: 30px;
+}
+
+
+
+@media (max-width: 520px){
+     .currentContainer{
+          flex-direction: column;
+          width: 90%;
+     }
+     .forecastCard{
+          padding: 0px 20px 0px 20px;
+
+     }
+}
