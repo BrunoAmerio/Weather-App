@@ -8,12 +8,12 @@
      padding: 20px;
      border-radius: 7px;
      margin: auto;
-     margin-top: 50px;
+     margin-top: 30px;
      background-color: #1360b8;
      color: rgb(255, 255, 255);
      box-shadow: 15px 20px 15px rgb(65, 65, 65);
-     font-family: 'ms-pgothic';
-     font-size: 19.9px;
+     font-family: sans-serif;
+     font-size: 19px;
 }
 ul{
      transform: translateX(-22px);
@@ -22,4 +22,10 @@ ul{
 
 .container a{
      color: black;
+}
+
+@media (max-width:510px){
+     .container{
+          text-align: center;
+     }
 }

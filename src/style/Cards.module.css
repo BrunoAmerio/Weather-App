@@ -8,3 +8,10 @@
      flex-wrap: wrap;
      margin-top: 30px;
 }
+
+@media (max-width: 510px){
+     .container{
+          gap: 50px;
+     }
+}
+

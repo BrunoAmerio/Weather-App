@@ -23,3 +23,10 @@
 .img{
      width: 80px;
 }
+
+
+@media (max-width:510px){
+     .container{
+          margin-top: 50px;
+     }
+}

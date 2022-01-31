@@ -1,7 +1,7 @@
 import React from "react";
 import s from '../style/ForecastHourDisplay.module.css'
 
-function ForecastHourDisplay(props){
+const ForecastHourDisplay = props => {
      let array = props.hours;
      let display = <div className={s.container}>
                {
@@ -20,8 +20,6 @@ function ForecastHourDisplay(props){
      </div>
 
      return(display)
-
-
 }
 
 export default ForecastHourDisplay;

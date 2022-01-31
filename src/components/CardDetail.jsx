@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 import ForecastHourDisplay from "./ForecastHoursDisplay";
 import s from '../style/CardDetail.module.css'
 
-
-export default function CardDetail(){
+const CardDetail = ()=>{
      const cities = useSelector( state => state.cities )
      let load = true
      let card;
@@ -37,7 +36,7 @@ export default function CardDetail(){
                                    <p>Humedad: {city.current.humidity}%</p>
                               </div>
                          </div>
-                         <ForecastHourDisplay hours={city.forecast.forecastday[0].hour}/>
+                         <ForecastHourDisplay className={s.forecastDisplayContainer} hours={city.forecast.forecastday[0].hour}/>
                          <div className={s.forecastContainer} key={5}>
                               {city.forecast.forecastday ? city.forecast.forecastday.map( item => {
                                    return(
@@ -61,3 +60,5 @@ export default function CardDetail(){
      )
 
 }
+
+export default CardDetail;

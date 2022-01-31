@@ -1,22 +1,16 @@
 import React, { useEffect } from 'react';
 import Card from './Card';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCities } from '../redux/actions.js';
+import { getAll } from '../redux/actions.js';
 import s from '../style/Cards.module.css'
 
 export default function Cards() {
-  let dispatch = useDispatch();
-  
-  useEffect(()=>{
-    dispatch(getCities())
-  },[])
-
+  const dispatch = useDispatch();
   let cities = useSelector(state => state.cities)
   const citiesList = cities.map( ciudad =>{
 
     return(
-      <div key={ciudad.location.localtime_epoch}>
-        <Card 
+        <Card key={ciudad.location.localtime_epoch}
           id={ciudad.location.localtime_epoch}
           name={ciudad.location.name} 
           max={ciudad.forecast.forecastday[0].day.maxtemp_c} 
@@ -24,8 +18,13 @@ export default function Cards() {
           img={ciudad.current.condition.icon}
           alt={ciudad.current.condition.text}
           />
-      </div>
     )
   }) 
+
+  useEffect(()=>{
+    dispatch( getAll() )
+  },[])
+  
+
   return <div className={ s.container }> {citiesList} </div>
 };

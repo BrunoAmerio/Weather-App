@@ -1,7 +1,7 @@
 import React from "react";
 import s from '../style/About.module.css';
 
-export default function About(){
+const About = ()=>{
 
      return(
           <div className={s.container}>
@@ -14,7 +14,9 @@ export default function About(){
                     <li> Local Storage</li>
                     <li> Modularized Styles</li>
                </ul>
-               <a href="#" target="blank">Link to GitHub repository here</a>
+               <a href="https://github.com/BrunoAmerio/Weather-App" target="blank">Link to GitHub repository here</a>
           </div>
      )
-} 
+}
+
+export default About;

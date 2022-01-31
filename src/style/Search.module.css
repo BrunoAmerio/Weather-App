@@ -13,20 +13,27 @@
 .input:focus{
      outline: none;
      background-color: #FA6155;
-
+}
+.input::placeholder{
+     color: white;
 }
 
 .searchButton{
+     display: flex;
      position: absolute;
+     align-items: center;
      padding: 1px;
      right: 0;
      width: 35px;
      height: 33px;
-     margin-left: 6px;
      border: none;
      border-radius: 12px;
      background-color: #FA6155;
      z-index: 99;
+}
+.searchButton img{
+     height: 24px;
+     width: 24px;
 }
 .searchButton:hover .input{
      width: 100%;

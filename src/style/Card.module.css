@@ -36,14 +36,14 @@
 
 .closeButton{
      position: absolute;
+     height: 10%;
+     width: 10%;
      right: 0;
      margin-right: 7px;
      color: white;
-     background-color: rgb(255, 0, 0);
      border: none;
      border-radius: 6px;
-     height: 25px;
-     width: 23px;
+     background-color: rgb(255, 0, 0);
      transform: translateY(-32px);
 }
 

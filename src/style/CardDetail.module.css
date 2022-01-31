@@ -1,3 +1,7 @@
+p{
+     margin: 0px;
+}
+
 .currentContainer{
      display: flex;
      position: relative;
@@ -43,17 +47,6 @@
      transition: .1s;
 }
 
-
-
-
-
-.tempData p{
-     margin: 0;
-}
-.gralData p{
-     margin: 0;
-}
-
 .forecastContainer{
      margin-top: 50px;
      display: flex;
@@ -74,13 +67,20 @@
 
 
 
-@media (max-width: 520px){
+@media (max-width: 510px){
      .currentContainer{
           flex-direction: column;
           width: 90%;
+          gap: 30px;
      }
-     .forecastCard{
-          padding: 0px 20px 0px 20px;
 
+     .imgContainer{
+          gap: 0px;
      }
+
+     .forecastCard{
+          width: 50%;
+          padding: 0px 20px 0px 20px;
+     }
+     
 }
